@@ -73,10 +73,10 @@ export function Hero() {
                 Download My CV
               </a>
               <a
-                href="#projects"
+                href="#experience"
                 className="group inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3.5 text-sm font-medium text-foreground transition-colors hover:border-accent/60"
               >
-                View My Work
+                View My Experience
                 <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
             </div>
