@@ -47,14 +47,6 @@ export function Hero() {
               <span className="text-muted-foreground">{profile.name.split(" ")[1]}</span>
             </h1>
           </Reveal>
-          <Reveal delay={140}>
-            <p className="mt-6 text-xl font-medium tracking-tight text-foreground sm:text-2xl">
-              {profile.headline}
-            </p>
-            <p className="mt-1 font-display text-lg italic text-accent-foreground">
-              {profile.subheadline}
-            </p>
-          </Reveal>
           <Reveal delay={200}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
               {profile.intro}
