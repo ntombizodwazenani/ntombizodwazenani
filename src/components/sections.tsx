@@ -6,7 +6,6 @@ import {
   Download,
   FileText,
   GraduationCap,
-  Linkedin,
   Mail,
   MapPin,
   Phone,
