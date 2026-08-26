@@ -344,7 +344,6 @@ export function Contact() {
   const items = [
     { icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
     { icon: Phone, label: "Phone", value: profile.phone, href: `tel:${profile.phone}` },
-    { icon: Linkedin, label: "LinkedIn", value: profile.linkedin, href: profile.linkedinUrl },
     { icon: MapPin, label: "Location", value: profile.location, href: undefined },
   ];
   return (
