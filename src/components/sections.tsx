@@ -24,7 +24,6 @@ import {
   education,
   experience,
   profile,
-  projects,
   skills,
 } from "@/data/portfolio";
 
@@ -252,57 +251,6 @@ export function Education() {
             ))}
           </div>
         </Reveal>
-      </div>
-    </Section>
-  );
-}
-
-export function Projects() {
-  return (
-    <Section id="projects">
-      <SectionHeading
-        eyebrow="Projects"
-        title="Initiatives I have built"
-        lead="Work that reflects my values: care, structure and community impact."
-      />
-      <div className="mt-12 grid gap-6 md:grid-cols-2">
-        {projects.map((p, i) => {
-          const placeholder = p.contributions.length === 0;
-          return (
-            <Reveal key={p.title + i} delay={i * 90} className={i === 0 ? "md:col-span-2" : ""}>
-              <article
-                className={`${card} h-full ${placeholder ? "border-dashed" : ""} ${i === 0 ? "grain-panel" : ""}`}
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <span className="rounded-full border border-accent/40 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-accent-foreground">
-                    {p.tag}
-                  </span>
-                  {placeholder ? (
-                    <Plus className="size-5 text-muted-foreground" />
-                  ) : (
-                    <ArrowUpRight className="size-5 text-accent" />
-                  )}
-                </div>
-                <h3 className="mt-6 font-display text-2xl tracking-tight text-foreground sm:text-3xl">
-                  {p.title}
-                </h3>
-                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                  {p.description}
-                </p>
-                {!placeholder && (
-                  <ul className="mt-7 grid gap-2.5 sm:grid-cols-2">
-                    {p.contributions.map((c) => (
-                      <li key={c} className="flex items-start gap-2.5 text-sm text-foreground">
-                        <span className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
-                        {c}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </article>
-            </Reveal>
-          );
-        })}
       </div>
     </Section>
   );

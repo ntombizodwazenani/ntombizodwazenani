@@ -9,7 +9,6 @@ import {
   Experience,
   Footer,
   Hero,
-  Projects,
   Skills,
 } from "@/components/sections";
 
@@ -58,7 +57,6 @@ function Index() {
         <About />
         <Experience />
         <Education />
-        <Projects />
         <Skills />
         <Achievements />
         <CV />

@@ -70,7 +70,7 @@ export const certifications = [
   { title: "Additional Professional Training", status: "Add Certificate" },
 ];
 
-export const projects = [
+export const certifications = [
   {
     title: "Little Lights Circle",
     tag: "Community Initiative",
@@ -132,7 +132,6 @@ export const navItems = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
-  { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "achievements", label: "Achievements" },
   { id: "cv", label: "CV" },
