@@ -70,33 +70,6 @@ export const certifications = [
   { title: "Additional Professional Training", status: "Add Certificate" },
 ];
 
-export const projects = [
-  {
-    title: "Little Lights Circle",
-    tag: "Community Initiative",
-    description:
-      "A supportive initiative focused on supporting mothers with premature babies emotionally, practically and through faith-based encouragement.",
-    contributions: [
-      "Programme development",
-      "Support resources",
-      "Educational materials",
-      "Prayer and encouragement resources",
-      "Visual resources",
-    ],
-  },
-  {
-    title: "Project title — to be added",
-    tag: "Placeholder",
-    description: "Add a short description of your next project here.",
-    contributions: [],
-  },
-  {
-    title: "Project title — to be added",
-    tag: "Placeholder",
-    description: "Add a short description of your next project here.",
-    contributions: [],
-  },
-];
 
 export const skills = [
   { name: "Communication", level: "Strong", note: "Clear, professional and empathetic" },
@@ -132,7 +105,6 @@ export const navItems = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
-  { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "achievements", label: "Achievements" },
   { id: "cv", label: "CV" },
