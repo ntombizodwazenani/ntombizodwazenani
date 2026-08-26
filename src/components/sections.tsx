@@ -1,6 +1,5 @@
 import {
   ArrowRight,
-  ArrowUpRight,
   Award,
   BadgeCheck,
   Briefcase,
@@ -11,7 +10,6 @@ import {
   Mail,
   MapPin,
   Phone,
-  Plus,
   Sparkles,
 } from "lucide-react";
 import portrait from "@/assets/portrait-placeholder.jpg";
