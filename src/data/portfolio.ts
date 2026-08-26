@@ -92,11 +92,6 @@ export const achievements = [
     detail:
       "Ongoing self-driven learning in digital marketing, customer service and professional skills.",
   },
-  {
-    title: "Personal projects & initiatives",
-    detail:
-      "Founded and developed Little Lights Circle, a community support initiative for mothers of premature babies.",
-  },
 ];
 
 export const navItems = [
