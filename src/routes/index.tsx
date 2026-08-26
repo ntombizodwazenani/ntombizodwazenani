@@ -12,9 +12,9 @@ import {
   Skills,
 } from "@/components/sections";
 
-const title = "Ntombizodwa Zenani — Aspiring Digital Professional";
+const title = "Ntombizodwa Zenani — Johannesburg, South Africa";
 const description =
-  "Portfolio of Ntombizodwa Zenani, an aspiring digital professional in Johannesburg, South Africa. Experience, education, projects, skills and CV.";
+  "Portfolio of Ntombizodwa Zenani, a motivated young professional in Johannesburg, South Africa. Experience, education, skills, achievements and CV.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Ntombizodwa Zenani",
-          jobTitle: "Aspiring Digital Professional",
+          jobTitle: "Professional",
           address: {
             "@type": "PostalAddress",
             addressLocality: "Johannesburg",

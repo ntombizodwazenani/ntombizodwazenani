@@ -6,7 +6,6 @@ import {
   Download,
   FileText,
   GraduationCap,
-  Linkedin,
   Mail,
   MapPin,
   Phone,
@@ -46,14 +45,6 @@ export function Hero() {
               <br />
               <span className="text-muted-foreground">{profile.name.split(" ")[1]}</span>
             </h1>
-          </Reveal>
-          <Reveal delay={140}>
-            <p className="mt-6 text-xl font-medium tracking-tight text-foreground sm:text-2xl">
-              {profile.headline}
-            </p>
-            <p className="mt-1 font-display text-lg italic text-accent-foreground">
-              {profile.subheadline}
-            </p>
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
@@ -352,7 +343,6 @@ export function Contact() {
   const items = [
     { icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
     { icon: Phone, label: "Phone", value: profile.phone, href: `tel:${profile.phone}` },
-    { icon: Linkedin, label: "LinkedIn", value: profile.linkedin, href: profile.linkedinUrl },
     { icon: MapPin, label: "Location", value: profile.location, href: undefined },
   ];
   return (
@@ -392,12 +382,6 @@ export function Contact() {
             );
           })}
         </div>
-        <Reveal delay={280}>
-          <p className="mt-6 text-xs text-muted-foreground">
-            Contact details shown are placeholders — update them in{" "}
-            <code className="rounded bg-secondary px-1.5 py-0.5">src/data/portfolio.ts</code>.
-          </p>
-        </Reveal>
       </div>
     </Section>
   );

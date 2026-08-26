@@ -6,14 +6,13 @@
 
 export const profile = {
   name: "Ntombizodwa Zenani",
-  headline: "Aspiring Digital Professional",
-  subheadline: "Building skills. Creating impact.",
+  headline: "Professional Portfolio",
+  subheadline: "",
   intro:
     "I am a motivated, career-focused young professional based in Johannesburg. I am continuously developing my skills across customer service, sales and digital marketing, and I am actively looking for opportunities — employment, learnerships or internships — where I can grow, contribute and build a meaningful career.",
   location: "Johannesburg, South Africa",
-  // PLACEHOLDER — replace with your real details
-  email: "your.email@example.com",
-  phone: "+27 XX XXX XXXX",
+  email: "ntombizodwazenani7@gmail.com",
+  phone: "0603380592",
   linkedin: "linkedin.com/in/your-profile",
   linkedinUrl: "#",
   // Put your PDF at: public/cv/ntombizodwa-zenani-cv.pdf
@@ -92,11 +91,6 @@ export const achievements = [
     title: "Continuous professional development",
     detail:
       "Ongoing self-driven learning in digital marketing, customer service and professional skills.",
-  },
-  {
-    title: "Personal projects & initiatives",
-    detail:
-      "Founded and developed Little Lights Circle, a community support initiative for mothers of premature babies.",
   },
 ];
 
