@@ -382,12 +382,6 @@ export function Contact() {
             );
           })}
         </div>
-        <Reveal delay={280}>
-          <p className="mt-6 text-xs text-muted-foreground">
-            Contact details shown are placeholders — update them in{" "}
-            <code className="rounded bg-secondary px-1.5 py-0.5">src/data/portfolio.ts</code>.
-          </p>
-        </Reveal>
       </div>
     </Section>
   );
