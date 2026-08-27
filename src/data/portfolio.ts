@@ -15,8 +15,9 @@ export const profile = {
   phone: "0603380592",
   linkedin: "linkedin.com/in/your-profile",
   linkedinUrl: "#",
-  // Put your PDF at: public/cv/ntombizodwa-zenani-cv.pdf
-  cvUrl: "/cv/ntombizodwa-zenani-cv.pdf",
+  cvUrl: cvAsset.url,
+  cvPreviewUrl: cvPreviewAsset.url,
+  cvFileName: "ntombizodwa-zenani-cv.pdf",
 };
 
 export const aboutPoints = [
