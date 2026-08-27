@@ -77,7 +77,7 @@ export function SiteNav() {
         <div className="flex items-center gap-2">
           <a
             href={profile.cvUrl}
-            download
+            download={profile.cvFileName}
             className="hidden rounded-full border border-accent/50 px-4 py-2 text-[13px] font-medium text-accent-foreground transition-colors hover:bg-accent/10 sm:inline-flex"
           >
             Download CV
