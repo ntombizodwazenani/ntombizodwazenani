@@ -55,7 +55,8 @@ export function Hero() {
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a
                 href={profile.cvUrl}
-                download
+                download={profile.cvFileName}
+
                 className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
               >
                 <Download className="size-4" />
