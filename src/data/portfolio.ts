@@ -4,6 +4,9 @@
  * Items marked PLACEHOLDER should be replaced with real details.
  */
 
+import cvAsset from "@/assets/cv.pdf.asset.json";
+import cvPreviewAsset from "@/assets/cv-preview.png.asset.json";
+
 export const profile = {
   name: "Ntombizodwa Zenani",
   headline: "Professional Portfolio",
