@@ -55,7 +55,8 @@ export function Hero() {
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a
                 href={profile.cvUrl}
-                download
+                download={profile.cvFileName}
+
                 className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
               >
                 <Download className="size-4" />
@@ -304,35 +305,41 @@ export function CV() {
             lead="A full overview of my education, experience and skills — available as a PDF download."
           />
           <Reveal delay={120}>
-            <a
-              href={profile.cvUrl}
-              download
-              className="mt-9 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
-            >
-              <Download className="size-4" />
-              Download My CV
-            </a>
-            <p className="mt-4 text-xs text-muted-foreground">
-              To publish your real CV, add the PDF to{" "}
-              <code className="rounded bg-secondary px-1.5 py-0.5">
-                public/cv/ntombizodwa-zenani-cv.pdf
-              </code>
-              .
-            </p>
+            <div className="mt-9 flex flex-wrap items-center gap-3">
+              <a
+                href={profile.cvUrl}
+                download={profile.cvFileName}
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
+              >
+                <Download className="size-4" />
+                Download My CV
+              </a>
+              <a
+                href={profile.cvUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+              >
+                <FileText className="size-4" />
+                View CV
+              </a>
+            </div>
           </Reveal>
         </div>
         <Reveal delay={160}>
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-xs rounded-3xl border border-dashed border-border bg-card p-8">
-            <div className="flex h-full flex-col items-center justify-center text-center">
-              <FileText className="size-9 text-accent" />
-              <p className="mt-5 font-display text-lg tracking-tight text-foreground">
-                CV Preview
-              </p>
-              <p className="mt-2 text-xs text-muted-foreground">
-                Placeholder — your PDF preview will appear here
-              </p>
-            </div>
-          </div>
+          <a
+            href={profile.cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative mx-auto block w-full max-w-xs overflow-hidden rounded-3xl border border-border bg-card shadow-sm transition-transform duration-300 hover:-translate-y-1"
+          >
+            <img
+              src={profile.cvPreviewUrl}
+              alt="Preview of Ntombizodwa Zenani's CV"
+              loading="lazy"
+              className="block w-full"
+            />
+          </a>
         </Reveal>
       </div>
     </Section>
